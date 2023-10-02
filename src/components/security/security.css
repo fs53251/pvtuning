@@ -1,0 +1,347 @@
+.security-main {
+    transform: scale(0.85);
+    transition: transform 2s ease;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40vh;
+}
+
+.security-main.show-animate {
+    transform: scale(1.05);
+}
+
+.main-container_sec {
+    height: var(--main-container-height);
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 1% 16% 4% 12%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container_sec::before {
+    content: "";
+    background-image: conic-gradient(
+        #ff0000 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 4s linear infinite;
+}
+
+.border_2 {
+    content: "";
+    width: fit-content;
+    height: 99%;
+    width: 99.5%;
+    background-color: #101010;
+    position: absolute;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0000;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+
+.blocks-container {
+    width: 100%;
+    position: relative;
+    margin: 1rem;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 1.4rem;
+    overflow: auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+    z-index: 5;
+}
+
+.security-tab_icon {
+    background-color: rgb(250, 246, 246);
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.security-tab_icon img {
+    min-width: 35px;
+    max-width: 35px;
+    min-height: 35px;
+    max-height: 35px;
+}
+
+.first-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-block h1 {
+    font-family: var(--font-family);
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.first-block h1 span {
+    color: rgb(227, 34, 34);
+}
+
+.first-block p {
+    font-family: var(--font-second);
+    max-width: 400px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.second-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2%;
+    font-family: var(--font-second);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.first {
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.second {
+    max-width: auto;
+    margin-top: 1px;
+    font-size: 1rem;
+    max-width: 1000px;
+}
+
+.security-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 130px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    padding-left: 1rem;
+}
+
+.security-tab:hover {
+    background-color: gray;
+    color: black;
+    transform: scale(1.1);
+}
+
+@media screen and (max-device-width: 1300px) {
+    .first-block {
+        flex: 1.1;
+    }
+
+    .second-block {
+        flex: 1.8;
+    }
+
+    .border_2 {
+        height: 99.6%;
+    }
+}
+
+@media screen and (max-device-width: 1200px) {
+    .main-container_sec {
+        margin-left: 4%;
+        margin-right: 4%;
+        height: var(--main-container-height);
+        overflow: hidden;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-device-width: 830px) {
+    .blocks-container {
+        flex-wrap: nowrap;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .first-block h1 {
+        font-size: 2rem;
+    }
+
+    .first-block p {
+        font-size: 1.2rem;
+        max-width: fit-content;
+        margin-bottom: 0;
+    }
+
+    .second {
+        font-size: 1.1rem;
+    }
+
+    .security-tab {
+        gap: 1rem;
+        min-height: 100px;
+        margin-bottom: 0;
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .security-tab:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-device-width: 685px) {
+    .first-block h1 {
+        font-size: 1.8rem;
+    }
+
+    .first-block p {
+        font-size: 1.1rem;
+    }
+
+    .second {
+        font-size: 1rem;
+    }
+
+    .security-tab {
+        gap: 1rem;
+        min-height: 100px;
+        margin-bottom: 0;
+        padding: 0;
+        padding-left: 0.4rem;
+    }
+
+    .border_2 {
+        width: 99%;
+        height: 99.5%;
+    }
+
+    .blocks-container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-device-width: 585px) {
+    .first-block h1 {
+        font-size: 1.8rem;
+    }
+
+    .first-block p {
+        font-size: 1rem;
+    }
+
+    .second {
+        font-size: 0.9rem;
+    }
+
+    .security-tab:hover {
+        transform: scale(1);
+    }
+
+    .blocks-container {
+        padding: 0;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+}
+
+@media screen and (max-device-width: 450px) {
+    .security-tab {
+        gap: 0.7rem;
+        min-height: auto;
+        padding-left: 0.3rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .first-block h1 {
+        font-size: 1.7rem;
+    }
+
+    .first-block p {
+        font-size: 0.9rem;
+    }
+
+    .second {
+        font-size: 0.85rem;
+    }
+
+    .security-tab_icon {
+        margin-top: 0.5rem;
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+    
+    .security-tab_icon img {
+        min-width: 25px;
+        max-width: 25px;
+        min-height: 25px;
+        max-height: 25px;
+    }
+
+    .second-block {
+        margin: 0;
+        padding: 0;
+    }
+
+    .first {
+        margin: 0;
+        padding: 0;
+    }
+
+    .security-tab {
+        align-items: flex-start;
+    }
+
+    .border_2 {
+        height: 99%;
+    }
+}
+
+@media screen and (max-device-width: 375px) {
+    .security-tab_icon {
+      display: none;
+    }
+
+    .security-tab {
+        margin-bottom: 0rem;
+    }
+
+    .first-block h1 {
+        font-size: 1.7rem;
+        margin: 0.7rem;
+    }
+
+    .first-block p {
+        font-size: 0.9rem;
+    }
+
+    .second {
+        font-size: 0.85rem;
+    }
+}

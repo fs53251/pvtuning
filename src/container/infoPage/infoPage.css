@@ -1,0 +1,10 @@
+.info-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    background-image: none;
+    background: radial-gradient(circle at 43% 87%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(74, 71, 74, 1) 110%);
+}

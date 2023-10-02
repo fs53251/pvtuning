@@ -1,0 +1,31 @@
+.home-container {
+    background-image: none;
+    background: radial-gradient(circle at 43% 87%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(74, 71, 74, 1) 99%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+}
+
+
+@media screen and (max-device-width: 850px) {
+    .home-container {
+        background-image: none;
+        background: radial-gradient(circle at 43% 87%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(74, 71, 74, 1) 99%);
+    }
+}
+
+@media screen and (max-device-height: 750px) {
+    .home-container {
+        background-image: none;
+        background: radial-gradient(circle at 43% 87%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(74, 71, 74, 1) 99%);
+    }
+}
+

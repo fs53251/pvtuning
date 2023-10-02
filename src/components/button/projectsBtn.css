@@ -1,0 +1,57 @@
+.button-link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background: url("../../../public/circle-star.svg") no-repeat center center / cover;
+}
+
+.button-image {
+    animation: spin-slow 8s infinite linear;
+    max-width: 160px;
+    max-height: 160px;
+}
+
+.button-arrow {
+    font-size: 3rem;
+    position: absolute;
+    transition: all 0.3s;
+    transform: translateX(-2px);
+    color: white;
+}
+
+.button-link:hover .button-arrow {
+    color: red;
+    transform: translateX(10px);
+}
+
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .button-image {
+        max-width: 130px;
+        max-height: 130px;
+    }
+    
+    .button-arrow {
+        font-size: 2rem;
+        position: absolute;
+        transition: all 0.3s;
+        transform: translateX(-2px);
+        color: white;
+    }
+
+    .button-link {
+        width: 140px;
+        height: 140px;
+    }
+}

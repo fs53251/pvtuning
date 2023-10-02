@@ -1,0 +1,23 @@
+.galerija-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: scroll;
+}
+
+.wrapp-galerija {
+    height: 100%;
+    margin: 1.5rem;
+    margin-right: 150px;
+    margin-left: 4%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    transform: scale(0.85);
+    transition: all 2s ease;
+}
+
+.wrapp-galerija.show-animate {
+    transform: scale(1);
+}

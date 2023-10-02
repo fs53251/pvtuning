@@ -1,0 +1,234 @@
+:root {
+    --main-container-height: auto;
+}
+
+.content-text_container {
+    overflow: hidden;
+}
+
+.text-image {
+    transform: scale(0.85);
+    transition: transform 2s ease;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 40vh;
+    overflow: hidden;
+}
+
+.text-image.show-animate {
+    transform: scale(1.05);
+}
+
+.main-container {
+    height: 82vh;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 1% 16% 5% 12%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container::before {
+    content: "";
+    background-image: conic-gradient(
+        #ff0000 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 4s linear infinite;
+}
+
+.border {
+    content: "";
+    width: fit-content;
+    height: 81.6vh;
+    width: 99.6%;
+    background-color: #101010;
+    position: absolute;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0000;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+ 
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.main-container img {
+    height: 99%;
+    width: 99%;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.text-container {
+    width: 100%;
+    position: relative;
+    margin: 1rem;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 1.4rem;
+    overflow: auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    z-index: 5;
+}
+
+.text-container h1 {
+    flex: 1.3;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: white;
+    font-size: 37px;
+    padding-bottom: 2rem;
+    align-self: center;
+    padding-left: 2rem;
+}
+
+.text-container h1 span {
+   color: red;
+}
+
+.inner-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1.3rem;
+    gap: 1rem;
+}
+
+.p {
+    font-family: var(--font-second);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-device-width: 1200px) {
+    .main-container {
+        margin-left: 4%;
+        margin-right: 4%;
+        height: var(--main-container-height);
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    .border {
+        height: 99%;
+    }
+}
+
+@media screen and (max-device-width: 960px) {
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .text-container h1 {
+        font-size: 2.4rem;
+        padding: 0;
+        margin: 0;
+        align-self: flex-start;
+        padding-top: 2rem;
+    }
+
+    .p {
+        font-size: 1.4rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .inner-container {
+        flex: 8;
+    }
+}
+
+@media screen and (max-device-width: 880px) {
+    .text-container h1 {
+        font-size: 2rem;
+    }
+
+    .p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-device-width: 685px) {
+    .text-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .p {
+        font-size: 1.1rem;
+    }
+
+    .border {
+        width: 99.3%;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .text-container h1 {
+        font-size: 1.7rem;
+        padding-top: 1rem;
+    }
+
+    .p {
+        font-size: 1rem;
+    }
+
+    .inner-container {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-device-width: 360px) {
+    .text-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .p {
+        font-size: 0.95rem;
+    }
+}

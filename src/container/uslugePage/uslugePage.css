@@ -1,0 +1,30 @@
+.usluge-container {
+    height: 100%;
+    padding-bottom: 200px;
+    overflow: auto;
+    background-image: none;
+    background: radial-gradient(circle at 43% 87%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(74, 71, 74, 1) 110%);
+}
+
+.wrapp-usluge {
+    margin: 1.5rem;
+    margin-right: 150px;
+    margin-left: 4%;
+    margin-top: 5%;
+    padding-top: 1rem;
+    transform: scale(0.85);
+    transition: all 2s ease;
+}
+
+.wrapp-usluge.show-animate {
+    transform: scale(1);
+}
+
+@media screen and (max-device-width: 1200px) {
+    .wrapp-usluge {
+        margin: 1rem;
+        padding-top: 1rem;
+        transform: scale(0.85);
+        transition: all 2s ease;
+    }
+}

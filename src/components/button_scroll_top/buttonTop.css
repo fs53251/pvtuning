@@ -1,0 +1,41 @@
+.button_scroll {
+    z-index: 999;
+    position: absolute;
+    position: absolute;
+    right: 3.2%;
+    bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_scroll:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.button_scroll:hover .arr {
+    border-color: red;
+}
+
+.arr {
+    align-self: center;
+    background-color: transparent;
+    border: solid rgb(255, 255, 255) 2px;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 20%;
+    transition: all 300ms;
+    transform: scale(0.9);
+}
+
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
