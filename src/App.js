@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Route, Routes, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import HomePageWrapper from "./components/wrappers/homePageWrapper";
 import InfoPageWrapper from "./components/wrappers/infoPageWrapper";
@@ -11,7 +11,7 @@ import KalkulatorPageWrapper from "./components/wrappers/kalkulatorPageWrapper";
 function App() {
   return (
     <div className="App">
-      <Switch>
+      <Routes>
         <Route 
           path={"/"}
           element={<HomePageWrapper />}
@@ -35,7 +35,7 @@ function App() {
           path={"/kalkulator"}
           element={<KalkulatorPageWrapper />}
         />
-      </Switch>
+      </Routes>
     </div>
   );
 }
