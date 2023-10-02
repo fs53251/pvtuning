@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pvtuning/static/css/main.8247fbc8.css",
-    "main.js": "/pvtuning/static/js/main.43c49992.js",
+    "main.js": "/pvtuning/static/js/main.d8d642bb.js",
     "static/media/circle-star.svg": "/pvtuning/static/media/circle-star.df1efd025257011930e3.svg",
     "index.html": "/pvtuning/index.html",
     "main.8247fbc8.css.map": "/pvtuning/static/css/main.8247fbc8.css.map",
-    "main.43c49992.js.map": "/pvtuning/static/js/main.43c49992.js.map"
+    "main.d8d642bb.js.map": "/pvtuning/static/js/main.d8d642bb.js.map"
   },
   "entrypoints": [
     "static/css/main.8247fbc8.css",
-    "static/js/main.43c49992.js"
+    "static/js/main.d8d642bb.js"
   ]
 }
