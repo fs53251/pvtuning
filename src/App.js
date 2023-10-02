@@ -11,7 +11,7 @@ import KalkulatorPageWrapper from "./components/wrappers/kalkulatorPageWrapper";
 function App() {
   return (
     <div className="App">
-      <Routes basename="/">
+      <Routes>
         <Route 
           path={"/"}
           element={<HomePageWrapper />}
