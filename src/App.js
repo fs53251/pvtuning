@@ -11,7 +11,6 @@ import KalkulatorPageWrapper from "./components/wrappers/kalkulatorPageWrapper";
 function App() {
   return (
     <div className="App">
-      Ajde
       <Routes>
         <Route 
           path={"/"}
