@@ -2,7 +2,6 @@
   "name": "pvtuning",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fs53251.github.io/pvtuning",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fontsource/sora": "^5.0.8",
@@ -30,7 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
+  }
 }
