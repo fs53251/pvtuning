@@ -6,12 +6,12 @@ const Header = () => {
     return (
         <header id="start">
             <div className="header-container">
-                <Link to="/">
+                <Link to="/pvtuning">
                     <img
-                        src="/pvt_logo.png"
+                        src="./pvtuning/pvt_logo.png"
                         width={220}
                         height={48}
-                        alt=""
+                        alt="slika"
                     ></img>
                 </Link>
                 <div className="header-socials">

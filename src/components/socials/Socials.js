@@ -8,6 +8,7 @@ const Socials = () => {
             { socData.map((data, index) => {
                 return (
                     <Link 
+                        key={index}
                         to={data.link}
                         target={data.target}
                         className="soc-link"

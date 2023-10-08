@@ -1,0 +1,18 @@
+.kontakt-container {
+    height: 100%;
+    overflow: scroll;
+    background-image: none;
+    background: radial-gradient(circle at 43% 87%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(74, 71, 74, 1) 110%);
+}
+.wrapp-kontakt {
+    height: 100%;
+    margin-right: 110px;
+    font-family: var(--font-second);
+}
+
+@media screen and (max-device-width: 1200px) {
+    .wrapp-kontakt {
+        margin-right: 0;
+        margin: auto;
+    }
+}

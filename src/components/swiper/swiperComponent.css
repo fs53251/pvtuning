@@ -14,19 +14,21 @@
     font-family: var(--font-second);
     color: white;
     gap: 2rem;
+    height: auto;
 }
 
 .auto-h2 {
-    flex: 1;
+    flex: 0.5;
     font-family: var(--font-family);
     color: rgb(180, 175, 175);
-    font-size: 2rem;
+    font-size: 1.7rem;
     max-width: 350px;
     font-weight: 800;
+    width: 100%;
 }
 
 .mySwiper {
-    height: 500px;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -66,35 +68,185 @@
 
 .car-list {
     list-style-type: none;
-    flex: 5;
+    flex: 7;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
+    width: 100%;
 }
 
 .car-element {
     font-family: var(--font-second);
-    text-align: center;
+    align-self: flex-start;
     height: auto;
-    width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
+    transition: all 1s ease;
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    width: 85%;
 }
 
 .car-element:hover {
     background-color: gray;
     color: black;
-}
-
-.car-element {
-    margin: 1rem;
-    padding: 0;
-    font-size: 1.6rem;
+    scale: 1.1;
 }
 
 .swiper-pagination {
     transform: translateY(-5px) !important;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    color: white;
+    border: none;
+}
+
+.close-button:hover {
+    opacity: 0.8;
+}
+
+.close-button-up {
+    display: none;
+}
+
+@media screen and (max-device-width: 1000px) {
+    .pic-tab {
+        width: 100%;
+    }
+    .mySlide img {
+        width: auto;
+        height: 600px;
+    }
+
+    .auto-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-button-up {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .close-button {
+        display: none;
+    }
+
+    .car-tab {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .car-list {
+        flex: 1;
+    }
+
+    .auto-h2 {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .mySwiper {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-device-width: 850px) {
+    .car-element {
+        padding: 0.6rem;
+        margin: 0.4rem;
+        font-size: 1.4rem;
+    }
+
+    .car-tab {
+        align-self: center;
+    }
+
+    .auto-container {
+        padding-bottom: 20vh;
+    }
+}
+
+@media screen and (max-device-width: 700px) {
+    .car-tab {
+        padding: 1rem;
+        gap: 0.3rem;
+    }
+
+    .pic-tab {
+        height: 700px;
+    }
+
+    .car-tab {
+        flex: 0;
+    }
+
+    .mySwiper {
+        height: 550px;
+    }
+
+    .mySlide {
+        width: 100% !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mySlide img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-device-width: 600px) {
+    .mySlide img {
+        height: 400px;
+    }
+
+    .mySwiper {
+        height: 450px;
+    }
+
+    .auto-h2 {
+        min-width: 0;
+        padding: 1px;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .auto-h2 {
+        font-size: 1.3rem;
+        margin: 0.4rem;
+        padding: 0.4rem;
+    }
+
+    .mySlide img {
+        height: 350px;
+    }
+
+    .mySwiper {
+        height: 390px;
+    }
+}
+
+@media screen and (max-device-width: 400px) {
+
+    .mySlide img {
+        height: 300px;
+    }
+
+    .mySwiper {
+        height: 340px;
+    }
 }

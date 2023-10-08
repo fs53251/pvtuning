@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://fs53251.github.io/pvtuning",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@fontsource/sora": "^5.0.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

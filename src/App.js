@@ -7,13 +7,14 @@ import InfoPageWrapper from "./components/wrappers/infoPageWrapper";
 import UslugePageWrapper from "./components/wrappers/uslugePageWrapper";
 import GalerijaPageWrapper from './components/wrappers/galerijaPageWrapper';
 import KalkulatorPageWrapper from "./components/wrappers/kalkulatorPageWrapper";
+import KontaktPageWrapper from './components/wrappers/kontaktPageWrapper';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route 
-          path={"/"}
+          path={"/pvtuning"}
           element={<HomePageWrapper />}
         />
         <Route 
@@ -34,6 +35,11 @@ function App() {
         <Route 
           path={"/kalkulator"}
           element={<KalkulatorPageWrapper />}
+        />
+
+        <Route
+          path={"/kontakt"}
+          element={<KontaktPageWrapper />}
         />
       </Routes>
     </div>

@@ -1,6 +1,7 @@
 .gallery {
     width: 100%;
     height: 100%;
+    margin-top: 5vh;
 }
 
 .gallery-swiper {
@@ -36,15 +37,16 @@
 }
 
 .swiper-pagination {
+    position: absolute !important;
     transform: translateY(10px) !important;
 }
 
-.close-button {
-    color: rgb(176, 22, 22);
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    z-index: 999;
-    background-color: black;
-    border: none;
+.home-h1 {
+    height: auto;
+}
+
+@media screen and (max-device-width: 1200px) {
+    .gallery-swiper {
+        height: 80vh;
+    }
 }
