@@ -6,9 +6,9 @@ const Header = () => {
     return (
         <header id="start">
             <div className="header-container">
-                <Link to="/pvtuning">
+                <Link to="/">
                     <img
-                        src="./pvtuning/pvt_logo.png"
+                        src="./pvt_logo.png"
                         width={220}
                         height={48}
                         alt="slika"

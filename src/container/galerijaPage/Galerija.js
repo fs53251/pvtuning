@@ -49,7 +49,7 @@ const Galerija = () => {
                 {auti.map((auto, index) => {
                     return (
                         <SwiperSlide className='gallery-slide' key={index}>
-                            <img src={"./pvtuning/" + auto.slike[0]} alt='' onClick={() => {
+                            <img src={auto.slike[0]} alt='' onClick={() => {
                                 setCarId(auto.id)
                             }}/>
                         </SwiperSlide>

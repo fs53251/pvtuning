@@ -25,7 +25,7 @@ const SwiperComponent = (props) => {
                 >
                     {props.auto.slike.map((imagee, index) => (
                         <SwiperSlide key={index} className="mySlide">
-                            <img src={"./pvtuning/" + imagee} alt={`Imagee ${index}`} />
+                            <img src={imagee} alt={`Imagee ${index}`} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

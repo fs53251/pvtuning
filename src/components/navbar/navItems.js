@@ -9,7 +9,7 @@ import {
 
 export const navData = [
     {   name: "Početna", 
-        path: "/pvtuning", 
+        path: "/", 
         icon: <HiHome /> 
     },
     {   name: "Informacije",

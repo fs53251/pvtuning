@@ -10,7 +10,7 @@ const ProjectsBtn = () => {
                 to="/info"
                 >
                 <img 
-                    src="./pvtuning/rounded-text.png"
+                    src="./rounded-text.png"
                     className="button-image" 
                     width={141}
                     height={148}

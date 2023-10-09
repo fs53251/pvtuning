@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route 
-          path={"/pvtuning"}
+          path={"/"}
           element={<HomePageWrapper />}
         />
         <Route 
