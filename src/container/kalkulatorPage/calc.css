@@ -198,10 +198,15 @@
     .select {
         font-size: 0.8rem;
     }
+
+    .text-broj label {
+        padding-left: 0.4rem;
+    }
+
     .calc-container {
-        margin-right: 0.1rem;
-        margin-left: 0.1rem;
-        margin-top: 10vh;
+        margin-right: 0.85em;
+        margin-left: 0.85rem;
+        margin-top: 20vh;
     }
 
     .text-select-container p {

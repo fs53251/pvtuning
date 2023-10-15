@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import L from "leaflet";
 
 const markerIcon = new L.Icon({
-  iconUrl: "./pvtuning/marker.png",
+  iconUrl: "./marker.png",
   iconSize: [37, 37],
   iconAnchor: [17, 46],
   popupAnchor: [0, -45],

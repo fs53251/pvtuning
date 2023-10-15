@@ -23,7 +23,7 @@ const Galerija = () => {
         <div className='gallery'>
             {selectedCar !== -1 ? (
                 <motion.div
-                    className="home-h1"
+                    className="home-h11"
                     variants={fadeIn("up", 0.1)}
                     initial="hidden"
                     animate="show"

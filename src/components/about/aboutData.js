@@ -32,7 +32,6 @@ export const aboutData = [
     {
         title: "Usluge",
         info: [
-            "AUTO DIJAGNOSTIKA",
             "DSG REMAP, STAGE 1 2 3",
             "CHIPTUNING REMAP STAGE 1 2 3",
             "EGR REMOVAL",
@@ -42,8 +41,6 @@ export const aboutData = [
             "ADITIVE PUMP OFF",
             "INTAKE/SWIRL FLAPS OFF",
             "LAMBDA/O2 REMOVAL",
-            "POPCORN",
-            "SPEED LIMITER OFF"
         ],
         button: <Button text="Više usluga" hrefLink="/usluge"/>
     },

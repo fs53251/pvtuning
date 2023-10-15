@@ -111,7 +111,7 @@
 
         width: 100%;
         max-width: 100%;
-        height: auto;
+        height: 45px;
         top: auto;
         right: 0;
         bottom: 0;
@@ -123,7 +123,7 @@
         align-items: center;
         justify-content: space-around;
         gap: 0.6em;
-        pad: 0.8rem;
+        padding: 1rem;
         margin: 0;
        
         width: 100%;
@@ -142,11 +142,5 @@
         right: 40px;
         top: 32px;
         rotate: 90deg;
-    }
-}
-
-@media screen and (max-device-height: 750px) and (max-device-width: 1200px){
-    .nav-container {
-        height: 3%;
     }
 }

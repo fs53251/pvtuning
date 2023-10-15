@@ -37,7 +37,6 @@ const About = () => {
     const [index, setIndex] = useState(0);
 
     const handleTabClick = (itemIndex) => {
-        console.log(aboutData);
         setIndex(itemIndex);
     };
 
@@ -45,7 +44,7 @@ const About = () => {
         <div ref={ref} className={`about ${inView ? 'show-animate' : ''}`}>
             <div className="about-main_container">
                 <motion.div 
-                     variants={fadeIn("right", 0.4)}
+                     variants={fadeIn("right", 0.3)}
                      initial="hidden"
                      animate="show"
                      exit="hidden"
@@ -79,7 +78,7 @@ const About = () => {
                 </motion.div>
 
                 <motion.div 
-                    variants={fadeIn("left", 0.4)}
+                    variants={fadeIn("left", 0.3)}
                     initial="hidden"
                     animate="show"
                     exit="hidden"

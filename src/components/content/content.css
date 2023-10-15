@@ -8,10 +8,10 @@
 
 .text-image {
     transform: scale(0.85);
-    transition: transform 2s ease;
+    transition: transform 0.7s ease;
     position: relative;
-    margin-top: 20%;
-    margin-bottom: 40vh;
+    margin-top: 1rem;
+    margin-bottom: 20vh;
     overflow: hidden;
 }
 
@@ -230,5 +230,9 @@
 
     .p {
         font-size: 0.95rem;
+    }
+
+    .text-container {
+        padding: 0.4rem;
     }
 }

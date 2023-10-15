@@ -16,7 +16,7 @@ const SwiperComponent = (props) => {
     };
 
     return (
-        <div className='auto-container'>
+        <div className='autoo-container'>
              <AiFillCloseSquare size={45} className='close-button-up' onClick={() => props.func()}/>
             <div className='pic-tab'>
                 <Swiper {...swiperParams}
