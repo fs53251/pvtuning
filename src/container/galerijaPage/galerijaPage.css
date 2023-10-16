@@ -1,5 +1,4 @@
 .galerija-container {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -8,23 +7,22 @@
     background: radial-gradient(circle at 43% 87%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 46%, rgba(74, 71, 74, 1) 99%);
 }
 
-.wrapp-galerija {
-    margin: 1.5rem;
-    margin-right: 150px;
-    margin-left: 4%;
-    margin-top: 0;
-    padding-top: 1rem;
-    transform: scale(0.85);
-    transition: all 2s ease;
-    height: 100%;
+.wrp-galerija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+    margin-left: 1rem;
+    scale: 0.9;
+    transition: all 1s ease;
 }
 
-.wrapp-galerija.show-animate {
-    transform: scale(1);
+.wrp-galerija.show-animate {
+    scale: 0.98;
 }
 
 @media screen and (max-device-width: 1200px) {
-    .wrapp-galerija {
+    .wrp-galerija {
         margin: 0.3rem;
     }
 }

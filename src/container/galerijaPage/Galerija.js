@@ -5,7 +5,6 @@ import { fadeIn } from "../../components/assets/variants";
 import { auti } from "../../components/galerija/auti";
 import SwiperComponent from "../../components/swiper/SwiperComponent";
 import "./galerija.css";
-import { Pagination } from 'react-bootstrap';
 
 const itemsPerPage = 15;
 

@@ -19,10 +19,10 @@ const GalerijaPage = () => {
         <div className="galerija-container">
             <Header />
             <Navbar />
-
-            <div className={`wrapp-galerija ${className}`}>
+            <div className={`wrp-galerija ${className}`}>
                 <Galerija />
             </div>
+            
         </div>
     );
 };
