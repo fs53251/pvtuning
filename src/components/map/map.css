@@ -6,7 +6,7 @@
     align-items: center;
     height: 70vh;
     margin: 10px;
-    
+    touch-action: none;
 }
 
 .leaflet-container {
@@ -23,6 +23,7 @@
 @media screen and (max-device-height: 650px) {
     .map-container {
         margin: 0;
+        margin-top: 1rem;
         padding: 0;
     }
 
@@ -55,6 +56,7 @@
         height: 90%;
         width: 100%;
         margin: 0;
+        margin-top: 1rem;
     }
     
     .leaflet-container {

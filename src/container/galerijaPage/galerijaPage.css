@@ -16,6 +16,7 @@
     padding-top: 1rem;
     transform: scale(0.85);
     transition: all 2s ease;
+    height: 100%;
 }
 
 .wrapp-galerija.show-animate {

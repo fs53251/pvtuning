@@ -11,6 +11,7 @@
 }
 
 .location-item {
+    font-family: var(--font-second);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

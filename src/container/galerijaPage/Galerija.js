@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/grid';
-import 'swiper/css/pagination';
-import { Grid, Navigation, Pagination } from 'swiper/modules';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../components/assets/variants";
 
 import { auti } from "../../components/galerija/auti";
 import SwiperComponent from "../../components/swiper/SwiperComponent";
 import "./galerija.css";
+import { Pagination } from 'react-bootstrap';
 
+const itemsPerPage = 15;
 
 const Galerija = () => {
     const [selectedCar, setSelectedCar] = useState(-1);
@@ -33,29 +30,22 @@ const Galerija = () => {
                 </motion.div>
                
             ) : (<></>)}
-             <Swiper
-                slidesPerView= "auto"
-                grid={{
-                    rows: 3,
-                    fill: "column",
-                }}
-                spaceBetween={1}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Grid, Pagination]}
-                className={`gallery-swiper ${selectedCar === -1 ? "" : "hide-swiper"}`}
-            >
+            <div className={`cars-container ${selectedCar !== -1 ? 'hide' : ''}`}>
                 {auti.map((auto, index) => {
-                    return (
-                        <SwiperSlide className='gallery-slide' key={index}>
-                            <img src={auto.slike[0]} alt='' onClick={() => {
-                                setCarId(auto.id)
-                            }}/>
-                        </SwiperSlide>
-                    );
-                })}
-            </Swiper>
+                        return (
+                            <div className='car-img' key={index}>
+                                <>
+                                    <img src={auto.slike[0]} alt='' onClick={() => {
+                                        setCarId(auto.id)
+                                    }}/>
+                                    <p className='ime-vozila'>{auto.vozilo}</p>   
+                                </>
+
+                            </div>
+                           
+                        );
+                })};
+            </div>
         </div>
     );
 };
