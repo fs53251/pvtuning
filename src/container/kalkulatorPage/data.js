@@ -77393,7 +77393,6 @@ export const cars = {
             },
         },
     },
-"Volkswagen": {
     "Golf": {
         "Golf 4 - 1997 - 2003": {
             "1.9 SDI 68hp": {
@@ -86764,6 +86763,5 @@ export const cars = {
         },
     },
 },
-}
 }
 }
