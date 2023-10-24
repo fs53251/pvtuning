@@ -49,15 +49,18 @@ export const aboutData = [
         info: [
             {
                 title: "Instagram",
-                value: <AiOutlineInstagram size={30} />
+                value: <AiOutlineInstagram size={30} />,
+                link: "https://www.instagram.com/pvttuning/"
             },
             {
                 title: "Facebook",
-                value: <AiOutlineFacebook size={30}/>
+                value: <AiOutlineFacebook size={30}/>,
+                link: "https://www.facebook.com/PVTtuning/"
             },
             {
                 title: "Web Stranica",
-                value: <CgWebsite size={30}/>
+                value: <CgWebsite size={30}/>,
+                link: "/kontakt"
             }
         ],
         button: <Button text="Kontaktiraj nas" hrefLink="/kontakt" />

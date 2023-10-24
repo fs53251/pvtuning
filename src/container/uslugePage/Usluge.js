@@ -108,7 +108,7 @@ const Usluge = () => {
                 <section class="issue">
 
                     <div className={`more2 ${showUsluge ? "show" : ""}`}>
-                        <h2 onClick={toggleUsluge}>Simptomi</h2>
+                        <h2 onClick={toggleUsluge}>Problemi</h2>
                         <BiSolidRightArrow className="usluge-right" onClick={toggleUsluge} />
                         <BiSolidDownArrow className="usluge-down" onClick={toggleUsluge} />
                     </div>

@@ -93,7 +93,12 @@
     padding: 1rem;
   }
 
+  .car-img img {
+    z-index: 999;
+  }
+
   .car-img img:hover + .ime-vozila {
     display: block;
+    z-index: 0;
   }
   

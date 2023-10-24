@@ -106,7 +106,14 @@ const About = () => {
                                     <div className="about-items_container about-item">
                                         <div className="about-item_title" >{item.title}</div>
                                         <div className="about-item_line" >-</div>
-                                        <div className="about-item_value" >{item.value}</div>
+                                        {item.link !== null ? (
+                                            <a href={item.link} target="_blank">
+                                                 <div className="about-item_value" >{item.value}</div>
+                                            </a>
+                                        ) : (
+                                            <div className="about-item_value" >{item.value}</div>
+                                        )}
+                                        
                                     </div>
                                 );
                             })
