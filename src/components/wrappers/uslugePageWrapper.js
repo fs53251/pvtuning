@@ -9,7 +9,7 @@ const UslugePageWrapper = () => {
         <title>PVTuning</title>
 
         <link rel="canonical" href="/info" />
-        
+        <link rel="icon" href="favicon.ico" />
         {/* Meta Opis (Meta Description) */}
         <meta name="description" content="Nudimo razne usluge mapiranja i kodiranja ECU jedinica." />
         

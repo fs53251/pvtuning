@@ -7,6 +7,7 @@ const InfoPageWrapper = () => {
            <Helmet>
         {/* Naslovna oznaka (Title Tag) */}
         <title>PVTuning</title>
+        <link rel="icon" href="favicon.ico" />
 
         <link rel="canonical" href="/info" />
         

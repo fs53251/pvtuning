@@ -18,6 +18,7 @@ function App() {
         {/* Naslovna oznaka (Title Tag) */}
         <title>PVTuning</title>
 
+        <link rel="icon" href="favicon.ico" />
         <link rel="canonical" href="/" />
         
         {/* Meta Opis (Meta Description) */}
