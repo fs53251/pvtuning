@@ -17,6 +17,8 @@ function App() {
       <Helmet>
         {/* Naslovna oznaka (Title Tag) */}
         <title>PVTuning</title>
+
+        <link rel="canonical" href="/" />
         
         {/* Meta Opis (Meta Description) */}
         <meta name="description" content="PVTuning pruža visokokvalitetne usluge mapiranja, chiptuninga i auto dijagnostike. Povećajte performanse i efikasnost svog vozila s našim uslugama." />
@@ -57,21 +59,16 @@ function App() {
         
         <meta name="subtitle5" content="Adblue Isključivanje" />
         <meta name="description5" content="Isključite Adblue sustav i optimizirajte performanse vozila." />
-        
-        <meta name="subtitle6" content="Swirl Flaps Isključivanje" />
-        <meta name="description6" content="Onemogućite zakretne zaklopke za poboljšanje učinkovitosti motora." />
-        
-        <meta name="subtitle7" content="Popcorn Limiter" />
-        <meta name="description7" content="Doživite uzbuđenje funkcije Popcorn Limiter uz našu uslugu Popcorn Limitera." />
+      
 
-        <meta name="subtitle8" content="Start-Stop Isključivanje" />
-        <meta name="description8" content="Povećajte kontrolu nad vozilom isključivanjem Start-Stop sustava." />
+        <meta name="subtitle6" content="Infomracije" />
+        <meta name="description6" content="Saznajte više o nama i uslugama koje pružamo" />
 
-        <meta name="subtitle9" content="DTC Brisanje" />
-        <meta name="description9" content="Eliminirajte problema s DTC (Trouble Codes) i poboljšajte performanse vozila." />
+        <meta name="subtitle7" content="Galerija" />
+        <meta name="description7" content="Pregledajte našu galeriju." />
 
-        <meta name="subtitle10" content="RPM Rev Limiter" />
-        <meta name="description10" content="Poboljšajte dinamiku vožnje uz uslugu isključivanja RPM Rev Limitera." />
+        <meta name="subtitle8" content="Kontakt" />
+        <meta name="description8" content="Kontaktirajte nas putem maila." />
 
 
       </Helmet>
