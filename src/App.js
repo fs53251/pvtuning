@@ -16,7 +16,7 @@ function App() {
 
       <Helmet>
         {/* Naslovna oznaka (Title Tag) */}
-        <title>PVTuning - Mapiranje, Chiptuning, Auto Dijagnostika</title>
+        <title>PVTuning</title>
         
         {/* Meta Opis (Meta Description) */}
         <meta name="description" content="PVTuning pruža visokokvalitetne usluge mapiranja, chiptuninga i auto dijagnostike. Povećajte performanse i efikasnost svog vozila s našim uslugama." />
