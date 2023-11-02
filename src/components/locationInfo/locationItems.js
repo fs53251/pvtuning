@@ -17,12 +17,6 @@ export const locationData = [
         broj: false,
     },
     {
-        icon: <AiOutlinePhone size={40} />,
-        text: "098 196 0781",
-        subtext: "Mobitel",
-        broj: true,
-    },
-    {
         icon: <BsPhone size={40} />,
         text: "099 7565 689",
         subtext: "Mobitel",
