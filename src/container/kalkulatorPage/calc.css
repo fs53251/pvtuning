@@ -78,14 +78,14 @@
     background-color: rgb(233, 89, 89);
 }
 
-.calc-container p {
+.calc-container h1 {
     margin-left: 2%;
     font-family: var(--font-family);
     font-size: 2rem;
     color: white;
     margin-bottom: 0;
 }
-.calc-container p span {
+.calc-container h1 span {
     color: red;
 }
 

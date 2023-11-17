@@ -11,7 +11,7 @@ const Header = () => {
                         src="./pvt_logo.png"
                         width={220}
                         height={48}
-                        alt="slika"
+                        alt=""
                     ></img>
                 </Link>
                 <div className="header-socials">

@@ -28,7 +28,7 @@ class Calc extends Component {
         return (
             <div className="calc-container">
                 <div className="text-select-container">
-                <p>Istraži <span>Snagu</span> Svog Vozila</p>
+                <h1>Istraži <span>Snagu</span> Svog Vozila</h1>
                 <div className="first-section">
                     <div className="select-container">
                         <select

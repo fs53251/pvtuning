@@ -2,6 +2,23 @@ import KalkulatorPage from "../../container/kalkulatorPage/kalkulatorPage";
 import {Helmet} from "react-helmet-async";
 
 const KalkulatorPageWrapper = () => {
+    const organizationData = {
+        name: "PVTuning",
+        url: "https://www.pvttuning.com",
+        logo: "/pvt_logo.png", // Relativna putanja u odnosu na public folder,
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+385 99 7565 689",
+          contactType: "kontakt",
+        },
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Donji Desinec, 130",
+          postalCode: "10450",
+          addressLocality: "Jastrebarsko",
+          addressCountry: "Hrvatska",
+        },
+      };
     return (
         <>
              <Helmet>
@@ -40,6 +57,29 @@ const KalkulatorPageWrapper = () => {
         <meta name="description1" content="Izračunajte koliko možemo povećati performanse Vašeg vozila." />
         
 
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "name": "${organizationData.name}",
+              "url": "${organizationData.url}",
+              "logo": "${organizationData.logo}",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "${organizationData.contactPoint.telephone}",
+                "contactType": "${organizationData.contactPoint.contactType}"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "${organizationData.address.streetAddress}",
+                "postalCode": "${organizationData.address.postalCode}",
+                "addressLocality": "${organizationData.address.addressLocality}",
+                "addressCountry": "${organizationData.address.addressCountry}"
+              }
+            }
+          `}
+        </script>
       </Helmet>
             <KalkulatorPage />
         </>

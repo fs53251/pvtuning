@@ -11,6 +11,23 @@ import KalkulatorPageWrapper from "./components/wrappers/kalkulatorPageWrapper";
 import KontaktPageWrapper from './components/wrappers/kontaktPageWrapper';
 
 function App() {
+  const organizationData = {
+    name: "PVTuning",
+    url: "https://www.pvttuning.com",
+    logo: "/pvt_logo.png", // Relativna putanja u odnosu na public folder,
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+385 99 7565 689",
+      contactType: "kontakt",
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Donji Desinec, 130",
+      postalCode: "10450",
+      addressLocality: "Jastrebarsko",
+      addressCountry: "Hrvatska",
+    },
+  };
   return (
     <HelmetProvider>
 
@@ -72,6 +89,29 @@ function App() {
         <meta name="description8" content="Kontaktirajte nas putem maila." />
 
 
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "name": "${organizationData.name}",
+              "url": "${organizationData.url}",
+              "logo": "${organizationData.logo}",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "${organizationData.contactPoint.telephone}",
+                "contactType": "${organizationData.contactPoint.contactType}"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "${organizationData.address.streetAddress}",
+                "postalCode": "${organizationData.address.postalCode}",
+                "addressLocality": "${organizationData.address.addressLocality}",
+                "addressCountry": "${organizationData.address.addressCountry}"
+              }
+            }
+          `}
+        </script>
       </Helmet>
       <div className="App">
       <Routes>
