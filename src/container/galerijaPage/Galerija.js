@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../components/assets/variants";
 
 import { auti } from "../../components/galerija/auti";
+
 import SwiperComponent from "../../components/swiper/SwiperComponent";
 import "./galerija.css";
 
@@ -29,6 +30,7 @@ const Galerija = () => {
                 </motion.div>
                
             ) : (<></>)}
+            <h1 hidden>Naša&nbsp;<span className="text-accent"> galerija</span></h1>
             <div className={`cars-container ${selectedCar !== -1 ? 'hide' : ''}`}>
                 {auti.map((auto, index) => {
                         return (
