@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 
 import HomePageWrapper from "./components/wrappers/homePageWrapper";
