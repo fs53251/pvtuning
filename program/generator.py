@@ -27,7 +27,7 @@ vehicle_options = select_vehicle.find_elements(By.TAG_NAME, "option")
 # Create a list of brand names and data-urlname attributes
 brand_data = [(brand_option.text, brand_option.get_attribute("data-urlname")) for brand_option in vehicle_options]
 
-for brand_name, data_urlname in brand_data[33:]:
+for brand_name, data_urlname in brand_data[44:]:
     print(f'"{brand_name}": {{')
     select_vehicle = driver.find_element(By.NAME, "brand_id")
     brand_option = select_vehicle.find_element(By.XPATH, f".//option[@data-urlname='{data_urlname}']")
@@ -38,7 +38,7 @@ for brand_name, data_urlname in brand_data[33:]:
     model_options = select_model.find_elements(By.TAG_NAME, "option")
     model_data = [(model_option.text, model_option.get_attribute("data-urlname")) for model_option in model_options]
     
-    for model_name, data_urlname in  model_data[1:]:
+    for model_name, data_urlname in  model_data[29:]:
         print(f'    "{model_name}": {{')
         select_model = driver.find_element(By.NAME, "model_id")
         model_option = select_model.find_element(By.XPATH, f".//option[@data-urlname='{data_urlname}']")
