@@ -90,7 +90,7 @@ export const uslugeData = [
         icon: <SlSpeedometer />,
     },
     {
-        title: "CHIPTUNING REMAP (Akcija 200€ stage 1)",
+        title: "CHIPTUNING REMAP (Akcija stage 1 od 180€)",
         description: "CHIPTUNING REMAP Stage 1, 2, 3 je visoko specijalizirana usluga tuninga motora koja se provodi u različitim fazama kako bi se optimizirale performanse, snaga i ekonomičnost vašeg vozila. Ova usluga koristi naprednu tehniku programiranja elektroničke kontrole motora (ECU) kako bi se postigli bolji rezultati u vožnji. Svaka faza (Stage 1, 2, 3) pruža različite razine tuninga kako bi se zadovoljile potrebe i preferencije svakog vozača.",
         potential: [
             "Povećanje snage: CHIPTUNING REMAP može povećati snagu i okretni moment vašeg motora, što rezultira boljim ubrzanjem i višim maksimalnim brzinama.",
