@@ -123,6 +123,13 @@ const Usluge = () => {
                         })}
                     </ul>
                 </section>
+
+                <a href="/cjenik.pdf" target="_blank" 
+                     onMouseOver={(e) => e.currentTarget.style.opacity = "0.8"}
+                     onMouseOut={(e) => e.currentTarget.style.opacity = "1"}
+                    style={{marginTop: "20px", display: "inline-block", width: "100px", height: "50px", font: "var(--font-second)", fontWeight: "900", fontSize: "1.3rem", fontWeight: "bold", textAlign: "center", lineHeight: "50px", textDecoration: "none", backgroundColor: "gray", color: "black", borderRadius: "10px"}}>
+                    CJENIK
+                </a>
             </div>
         </>
     );

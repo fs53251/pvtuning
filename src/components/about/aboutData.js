@@ -1,5 +1,6 @@
 import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
+import { ImPriceTags } from "react-icons/im";
 import Button from "../button_2/Button";
 
 export const aboutData = [
@@ -61,8 +62,13 @@ export const aboutData = [
                 title: "Web Stranica",
                 value: <CgWebsite size={30}/>,
                 link: "/kontakt"
-            }
+            },
+            {
+                title: "Cjenik",
+                value: <ImPriceTags size={30}/>,
+                link: "/cjenik.pdf"
+            },
         ],
-        button: <Button text="Kontaktiraj nas" hrefLink="/kontakt" />
+        button: <Button text="kontakriraj nas" hrefLink="/kontakt" />
     }
 ];
