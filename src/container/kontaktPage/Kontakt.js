@@ -263,7 +263,7 @@ const Kontakt = () => {
                 
                 <div className="label-i">
                     <div className="par">
-                        <input type="submit" className="but istrazi" value="Pošalji zahtjev" />
+                        <input type="submit" className="but istrazi" value="Zakaži termin" />
                     </div>
                 </div>
                 
