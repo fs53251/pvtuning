@@ -11,19 +11,19 @@ import ButtonTop from "../button_scroll_top/ButtonTop";
 const countData = [
     {
         start: 0,
-        end: 7,
+        end: 9,
         duration: 4,
         text: "Godina iskustva"
     },
     {
         start: 0,
-        end: 650,
+        end: 2000,
         duration: 4,
         text: "Završenih projekata"
     },
     {
         start: 0,
-        end: 500,
+        end: 2000,
         duration: 4,
         text: "Zadovoljnih klijenata"
     },
