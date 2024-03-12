@@ -18,7 +18,7 @@ export const locationData = [
     },
     {
         icon: <BsPhone size={40} />,
-        text: "099 7565 689",
+        text: "091 574 2814",
         subtext: "Mobitel",
         broj: true,
     },

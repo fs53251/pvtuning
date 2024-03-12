@@ -17,7 +17,7 @@ export const aboutData = [
             },
             {
                 title: "Telefon",
-                value: "+385 99 7565 689"
+                value: "+385 91 574 2814"
             },
             {
                 title: "E-mail",
