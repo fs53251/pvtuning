@@ -69,6 +69,6 @@ export const aboutData = [
                 link: "/cjenik.pdf"
             },
         ],
-        button: <Button text="kontakriraj nas" hrefLink="/kontakt" />
+        button: <Button text="kontaktiraj nas" hrefLink="/kontakt" />
     }
 ];
