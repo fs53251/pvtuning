@@ -11,16 +11,16 @@ const markerIcon = new L.Icon({
   popupAnchor: [0, -45],
 });
 
-
 const Map = () => {
   const [center, setCenter] = useState({lat: 45.677280, lng: 15.702500});
-  const ZOOM_LEVEL = 16;
+  const [pula, setPula] = useState({lat: 44.857307899510374, lng: 13.84164061757081});
+  const ZOOM_LEVEL = 8;
   const mapRef = useRef();
 
   return (
     <div className="map-container">
       <MapContainer 
-        center={center}
+        center={{lat: 45.377280, lng: 15.202500}}
         zoom={ZOOM_LEVEL}
         ref={mapRef}
         className='leaflet-container'
@@ -36,7 +36,15 @@ const Map = () => {
                   <b className='location'>Donji Desinec 130,<br />Jastrebarsko</b>
                 </a>
               </Popup>
-            </Marker>
+          </Marker>
+
+          <Marker position={[pula.lat, pula.lng]} icon={markerIcon} >
+              <Popup>
+                <a className='link-container' href="https://www.google.com/maps?q=44.857307899510374,13.84164061757081" target="_blank">
+                  <b className='location'>Savudrijska ul. 1, 52 100,<br />Pula</b>
+                </a>
+              </Popup>
+          </Marker>
       </MapContainer>
     </div>
   );

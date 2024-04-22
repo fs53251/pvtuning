@@ -12,12 +12,20 @@ export const aboutData = [
                 value: "PVTuning"
             },
             {
-                title: "Adresa",
+                title: "Adresa (ZAGREB)",
                 value: "Donji Desinec 130"
             },
             {
-                title: "Telefon",
-                value: "+385 91 574 2814"
+                title: "Telefon (ZAGREB)",
+                value: "+385 99 756 5689"
+            },
+            {
+                title: "Adresa (PULA)",
+                value: "Savudrijska ulica 1"
+            },
+            {
+                title: "Telefon (PULA)",
+                value: "+385 95 342 0110"
             },
             {
                 title: "E-mail",
@@ -26,24 +34,24 @@ export const aboutData = [
             {
                 title: "Vlasnik",
                 value: "Petar Volarić"
-            }
+            },
         ],
         button: <Button text="Kontaktiraj nas" hrefLink="/kontakt"/>
     },
     {
-        title: "Usluge",
+        title: "Mjesto",
         info: [
-            "DSG REMAP, STAGE 1 2 3",
-            "CHIPTUNING REMAP STAGE 1 2 3",
-            "EGR REMOVAL",
-            "DPF/FAP REMOVAL",
-            "DTC REMOVAL",
-            "ADBLUE OFF/SCR",
-            "ADITIVE PUMP OFF",
-            "INTAKE/SWIRL FLAPS OFF",
-            "LAMBDA/O2 REMOVAL",
+            "ZAGREB/JASTREBARSKO:",
+            "Donji Desinec 130, Jastrebarsko",
+            "Petar Volarić - (+385 99 756 5689)",
+            "",
+            "",
+            "",
+            "PULA:",
+            "Savudrijska ul. 1, 52 100 Pula",
+            "Mario Spremo - (+385 95 342 0110)"
         ],
-        button: <Button text="Više usluga" hrefLink="/usluge"/>
+        button: "",
     },
     {
         title: "Društvene mreže",

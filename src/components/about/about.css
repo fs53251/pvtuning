@@ -68,7 +68,7 @@
 .about-count_number {
     font-family: var(--font-family);
     position: relative;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
 }
