@@ -6,10 +6,11 @@ export const auti = [
             "auti/1/1_2.png",
             "auti/1/1_3.png",
         ],
-        vozilo: "Volkswagen Passat 2015",
+        vozilo: "Volkswagen golf VIII GTI 245KS",
         opis: [
-            "Nove karte navigacije 2023",
-            "Aktivacija upozorenja za kamere",
+            "STAGE 1",
+            "Optimizacija mjenjača",
+            "245KS > 327KS",
         ],
     },
     {
@@ -82,9 +83,8 @@ export const auti = [
         slike: [
             "auti/7/7_1.png",
             "auti/7/7_2.png",
-            "auti/7/7_3.png",
         ],
-        vozilo: "PEUGEOT 5008 2017",
+        vozilo: "LAND ROVER",
         opis: [
             "DPF off",
             "EGR off",
@@ -126,11 +126,10 @@ export const auti = [
             "auti/10/10_2.png",
             "auti/10/10_3.png",
         ],
-        vozilo: "VW Golf 6 2.0 TDI 140ks 2010",
+        vozilo: "Mercedes GLC 220d",
         opis: [
             "Vmax off",
             "STAGE 1",
-            "140ks > 190ks",
         ],
     },
     {
