@@ -17,7 +17,7 @@ export const aboutData = [
             },
             {
                 title: "Telefon (ZAGREB)",
-                value: "+385 99 756 5689"
+                value: "+385 91 5742 814"
             },
             {
                 title: "Adresa (PULA)",
