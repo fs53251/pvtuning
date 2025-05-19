@@ -18,7 +18,7 @@ export const locationData = [
     },
     {
         icon: <BsPhone size={40} />,
-        text: "099 756 5689",
+        text: "091 5742 814",
         subtext: "Mobitel (ZG)",
         broj: true,
     },
