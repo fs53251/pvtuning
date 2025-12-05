@@ -27,13 +27,14 @@ export const aboutData = [
                 title: "Telefon (PULA)",
                 value: "+385 95 342 0110"
             },
+            
             {
-                title: "E-mail",
-                value: "pvt.tuning@gmail.com"
+                title: "Adresa (POREČ)",
+                value: "Karla Huguesa 26a"
             },
             {
-                title: "Vlasnik",
-                value: "Petar Volarić"
+                title: "Telefon (POREČ)",
+                value: "+385 99 413 3920"
             },
         ],
         button: <Button text="Kontaktiraj nas" hrefLink="/kontakt"/>
@@ -49,7 +50,13 @@ export const aboutData = [
             "",
             "PULA:",
             "Savudrijska ul. 1, 52 100 Pula",
-            "Mario Spremo - (+385 95 342 0110)"
+            "Mario Spremo - (+385 95 342 0110)",
+            "",
+            "",
+            "",
+            "POREČ:",
+            "Karla Huguesa 26a Poreč",
+            "Matija Leskovar - (+385 99 413 3920)"
         ],
         button: "",
     },
