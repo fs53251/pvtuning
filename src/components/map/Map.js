@@ -14,6 +14,7 @@ const markerIcon = new L.Icon({
 const Map = () => {
   const [center, setCenter] = useState({lat: 45.677280, lng: 15.702500});
   const [pula, setPula] = useState({lat: 44.857307899510374, lng: 13.84164061757081});
+  const [porec, setPorec] = useState({lat: 45.219937000000000,lng: 13.609200000000000});
   const ZOOM_LEVEL = 8;
   const mapRef = useRef();
 
@@ -42,6 +43,15 @@ const Map = () => {
               <Popup>
                 <a className='link-container' href="https://www.google.com/maps?q=44.857307899510374,13.84164061757081" target="_blank">
                   <b className='location'>Savudrijska ul. 1, 52 100,<br />Pula</b>
+                </a>
+              </Popup>
+          </Marker>
+
+
+           <Marker position={[porec.lat, porec.lng]} icon={markerIcon} >
+              <Popup>
+                <a className='link-container' href="https://www.google.com/maps?q=45.219937000000000,13.609200000000000" target="_blank">
+                  <b className='location'>Karla Huguesa 26a<br />Poreč</b>
                 </a>
               </Popup>
           </Marker>
