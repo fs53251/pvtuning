@@ -51,7 +51,7 @@ const About = () => {
                      className="about-main_motion_title"
                 >
                     <h1 className="about-main_title">
-                        Dobrodošli u <span className="text-accent"> PVTuning, </span> <br />
+                        Dobro došli u <span className="text-accent"> PVTuning, </span> <br />
                         Vašeg partnera za visokokvalitetne <br/>
                         performanse auta.
                     </h1>
